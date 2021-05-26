@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "proyectov2-1d4e2": {
+      "hosting": {
+        "proyectoV1": [
+          "proyectov2-1d4e2"
+        ]
+      }
+    }
+  }
+}

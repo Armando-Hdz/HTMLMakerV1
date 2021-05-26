@@ -1,7 +1,35 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { SendEmailComponent } from './auth/send-email/send-email.component';
+import { WorkSpaceComponent } from './auth/work-space/work-space.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo:'/home',
+    pathMatch:'full'
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./auth/login/login.module').then(m => m.LoginModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./auth/register/register.module').then(m => m.RegisterModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+  },
+  {
+    path: 'verification-email',
+    component: SendEmailComponent
+  },
+  {
+    path: 'workspace',
+    component: WorkSpaceComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
