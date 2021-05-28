@@ -1,0 +1,170 @@
+
+.example-box {
+  padding: 20px 10px;
+  border-bottom: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: move;
+  background: white;
+  font-size: 14px;
+}
+
+input{
+  padding: 20px 10px;
+}
+
+/*-------------------------- INICIA CSS DE WORKSPACE ------------------------*/
+.h4-page{
+  width: 250px;
+  top: 1px;
+  margin-top: 2px;
+  border-radius: 20px;
+  text-align: center;
+  margin:auto;
+  background: #86A8E7;
+}
+
+.workspace{
+  top:0 ;
+  position: relative;
+  border: 3px solid #34495e;
+  margin-top: 10px;
+  margin-left: -115px;
+  width:300px;
+  height: 800px;
+  text-align: center;
+  border-radius: 15px;
+  display:inline-block;
+}
+
+.ingresar-componentes{
+  position: relative;
+  top: 0px;
+  border-radius: 10px;
+  border: 3px solid #34495e;
+  margin-top: -800px;/* ALTO DEL WORK SPACE*/
+  left: 300px;
+  width: 800px;
+  height: auto;
+  text-align: center;
+
+
+}
+
+.example-list {
+  width: 95%;
+  height: 60px;
+  position: absolute;
+  top:50px;
+  max-width: 95%;
+  /*border: solid 3px #34495e;*/
+  min-height: 40px;
+  display: block;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  left: 8px;
+  display: table;
+}
+
+.zona-dibujo{
+  top: 15px;
+  position: relative;
+  border: solid 3px #34495e;
+  text-align: center;
+  margin-left: 210px;
+  width: 1000px;
+  height: 700px;
+}
+
+.list-pageTitle{
+  margin-top: 2px;
+  top: 85px;
+  left: 300px;
+  width: 100%;
+  height: 25%;
+  text-align: center;
+  min-height: 60px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
+  background: #7F7FD5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.list-pageLeft{
+  margin-top: 2px;
+  top: 85px;
+  left: 300px;
+  width: 20%;
+  height: 50%;
+  text-align: center;
+  min-height: 60px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
+  background: #7F7FD5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.list-pageCenter{
+  margin-top: 2px;
+  top: 85px;
+  left: 300px;
+  margin-left: 2px;
+  width: 60%;
+  height: 50%;
+  text-align: center;
+  min-height: 60px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
+  background: #7F7FD5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.list-pageRight{
+  margin-top: 2px;
+  top: 0px;
+  left: 300px;
+  margin-left: 1px;
+  width: 19%;
+  height: 50%;
+  text-align: center;
+  min-height: 60px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
+  background: #7F7FD5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.list-pageEnd{
+  margin-top: 1px;
+  top: 0px;
+  left: 300px;
+  margin-left: 0px;
+  width: 100%;
+  height: 17%;
+  text-align: center;
+  min-height: 60px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
+  background: #7F7FD5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

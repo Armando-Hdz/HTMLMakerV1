@@ -6,13 +6,16 @@ import { AppComponent } from './app.component';
 
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment.prod';
 import { SendEmailComponent } from './auth/send-email/send-email.component';
 import { WorkSpaceComponent } from './auth/work-space/work-space.component';
+
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { WorkSpaceComponent } from './auth/work-space/work-space.component';
     AppRoutingModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    DragDropModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

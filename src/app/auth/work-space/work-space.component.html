@@ -1,1 +1,138 @@
-<p>work-space works!</p>
+<div class="workspace">
+  <div class="row">
+    <h1 class="text-cente montserrat">
+      WORK SPACE
+    </h1>
+    <div
+  cdkDropList
+  class="example-list"
+  id="list-todo"
+  [cdkDropListData]="todo"
+  [cdkDropListConnectedTo]="[
+    'list-pageTitle',
+    'list-pageLeft',
+    'list-pageRight',
+    'list-pageCenter',
+    'list-pageEnd'
+  ]"
+  (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let item of todo" cdkDrag>
+    {{item}}
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="ingresar-componentes">
+  <div class="col-lg-offset-lg-2 mb-4">
+    <input
+      type="text"
+      [(ngModel)]="tarea"
+      (keyup.enter)="agregarTarea()"
+      class="form-control text-center"
+      placeholder="Ingrese nuevo componente">
+  </div>
+</div>
+
+
+
+<div class="zona-dibujo">
+  <h4 class="h4-page">
+    PAGE HERE
+  </h4>
+
+  <!-- DIV 1 -->
+  <div
+    cdkDropList
+    class="list-pageTitle"
+    id="list-pageTitle"
+    [cdkDropListData]="pageTitle"
+    [cdkDropListConnectedTo]="[
+      'list-todo',
+      'list-pageLeft',
+      'list-pageRight',
+      'list-pageCenter',
+      'list-pageEnd'
+    ]"
+    (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of pageTitle" cdkDrag>
+      {{item}}
+    </div>
+  </div>
+
+  <!-- DIV 2 -->
+  <div
+    cdkDropList
+    class="list-pageLeft"
+    id="list-pageLeft"
+    [cdkDropListData]="pageLeft"
+    [cdkDropListConnectedTo]="[
+      'list-todo',
+      'list-pageTitle',
+      'list-pageRight',
+      'list-pageCenter',
+      'list-pageEnd'
+    ]"
+    (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of pageLeft" cdkDrag>
+      {{item}}
+    </div>
+  </div>
+
+  <!-- DIV 3 -->
+  <div
+    cdkDropList
+    class="list-pageCenter"
+    id="list-pageCenter"
+    [cdkDropListData]="pageCenter"
+    [cdkDropListConnectedTo]="[
+      'list-todo',
+      'list-pageTitle',
+      'list-pageLeft',
+      'list-pageRight',
+      'list-pageEnd'
+    ]"
+    (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of pageCenter" cdkDrag>
+      {{item}}
+    </div>
+  </div>
+
+  <!-- DIV 4 -->
+  <div
+    cdkDropList
+    class="list-pageRight"
+    id="list-pageRight"
+    [cdkDropListData]="pageRight"
+    [cdkDropListConnectedTo]="[
+      'list-todo',
+      'list-pageTitle',
+      'list-pageLeft',
+      'list-pageCenter',
+      'list-pageEnd'
+    ]"
+    (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of pageRight" cdkDrag>
+      {{item}}
+    </div>
+  </div>
+
+  <!-- DIV 5 -->
+  <div
+    cdkDropList
+    class="list-pageEnd"
+    id="list-pageEnd"
+    [cdkDropListData]="pageEnd"
+    [cdkDropListConnectedTo]="[
+      'list-todo',
+      'list-pageTitle',
+      'list-pageLeft',
+      'list-pageRight',
+      'list-pageCenter'
+    ]"
+    (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of pageEnd" cdkDrag>
+      {{item}}
+    </div>
+  </div>
+</div>
